@@ -11,14 +11,17 @@ Current phase: **Phase 0 – Accounts and tools**
 - 2026-10-23: Owner step 0.2 done: Supabase project "Werbegeschenk Database" created.
 - 2026-10-23: Owner step 0.3 done: Project URL (https://xdkpifmpfnntrhqvdouu.supabase.co), publishable key and secret key in `.env.local`. `node scripts/check-env.mjs` passes, including a live check that the project accepts both keys. The secret key works on the Auth admin API (0 users so far).
 
+- 2026-10-23: Owner step 0.4 done: public sign-up switched off, Site URL `http://localhost:3000`, Redirect URL `http://localhost:3000/**`. Verified: a sign-up attempt through the API is refused (HTTP 422 `signup_disabled`), Email provider still on, 0 users in the project.
+- 2026-10-23: **Checkpoint 0 reached.**
+
 ## Next
 
-- Owner step 0.4: switch off public sign-up (verified still ON on 2026-10-23), set localhost URLs.
-- Checkpoint 0, then wait for "go" before Phase 1.
+- Phase 1: Foundation and first deployment (Next.js app, tooling, `npm run check:env` with zod, Supabase clients, `/api/health`, CI, placeholder login page), then owner steps 1.1 (Vercel) and 1.2 (live address in Supabase).
+- Before Phase 1, the owner saves the three preview screenshots in `docs/design/` (asked for with the request template).
 
 ## Waiting on the owner
 
-- Owner step 0.4: switch off "Allow new users to sign up", set Site URL and Redirect URLs to localhost, send a screenshot.
+- "Go" for Phase 1.
 
 ## Security follow-ups
 
